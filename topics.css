@@ -1,0 +1,23 @@
+.top-content {
+    height: 100vh;
+}
+
+.b-row a h2 {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.col--4 a p {
+    color: black;
+}
+
+.b-row a {
+    background: white;
+}
+
+.b-row a:hover {
+    background: #7ca;
+    color: white;
+}
+
+
