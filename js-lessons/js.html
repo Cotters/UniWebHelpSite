@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>JavaScript</title>
+    
+    
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../breezy.css">
+    
+    
+</head>
+<body>
+
+    <div class="nav">
+    <nav>
+        <ul>
+            <li><a href="../index.html">&laquo; Home</a></li>    
+            <li><a href="../site-map.html">Site Map</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <div class="top-content padding">
+        <h1>JavaScript Introduction</h1>
+        
+        <h3>What is JavaScript and what is it used for?</h3>
+        <p>JavaScript is a client side scripting language that executes in the web browser on the client machine.</p>
+        
+        <p>Uses:</p>
+        
+        <ul>
+            <li>Interaction with user behaviour (mouse clicks)</li>
+            <li>Interaction with browser enviroment (browser driven events)</li>
+            <li>Interaction could be:
+                <ul>
+                    <li>Validation from data</li>
+                    <li>Creating and controlling browser windows</li>
+                    <li>Dynamic style/presentation effects</li>
+                    <li>Dynamic content creation/inclusion</li>
+                    <li>Asynchronous data acquisition</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>Adding to a web page</h3>
+        <p>Scripts can be added in two ways: using the <span class="code">&lt;script&gt;</span> tag like this: <span class="code">&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;</span>, or inline such like this:</p>
+        <div class="code">
+        <p>
+            &lt;script type="text/javascript"&gt;<br/>
+            document.write("&lt;h1&gt;Hello World&lt;/h1&gt;");<br/>
+            &lt;/script&gt;<br/>
+            
+        </p>
+        </div>
+        
+        <p>The former method is prefered as it allows reuse of the JavaScript file across different pages. Also, common functions can be shared, and shared code can be cached. It is also good practice to keep files seperate, especially usefull when it comes to altering your script across multiple pages, like in CSS.</p>
+        
+        
+        <p>Here is an example of external JavaScript files being referenced on this website. They are used to add functionality to the 'Top' buttons located at the bottom of most pages.</p>
+        <img src="external-js.png">
+        
+        
+    </div> <!-- top-content -->
+    
+    <div class="b-row pagination">    
+        <div class="col--4"><a class="pag-prev" href="../index.html">&laquo; Home</a></div>
+        <div class="col--4"><a href="#" class="pag-top">Top</a></div>
+        <div class="col--4"></div>
+        
+    </div>
+    
+    
+    <!--Scripts -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="../index.js"></script>    
+    
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS: Units & Colours</title>
+    
+    <link rel="stylesheet" type="text/css" href="../breezy.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="html-lessons.css">
+    <link rel="stylesheet" type="text/css" href="css-lessons.css">
+    
+    
+</head>
+<body>
+
+    <div class="nav">
+    <nav>
+        <ul>
+            <li><a href="css.html">&laquo; CSS</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../site-map.html">Site Map</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <div class="top-content padding">
+        <h1>Units & Colours</h1>
+        <h3>CSS Units</h3>
+        <p>CSS supports many types of measurement units. However they can be split into two types:</p>
+        
+        <p>Absolute units calculate independently of other page content and/or browser defaults.</p>
+        <ul>
+            <li>Useful for precise layout</li>
+            <li>Include Pixels (px), Points (pt), Millimetres (mm)</li>
+        </ul>
+        
+        <p>Relative units calculated proportionally against other page content or a browser default.</p>
+        <ul>
+            <li>e.g. currently available width, default text size etc.</li>
+            <li>Include Percentages (%), Ems (em), Exes (ex)</li>
+            <li>Also special relative units for text e.g. small, large, x-large etc.</li>
+        </ul>
+        
+        <p>A good design uses both.</p>
+        
+        <h3>CSS Colours</h3>
+        <p>It is important to note that HTML and CSS are American written, so you should always spell colour in the American way, color.</p>
+        <p>CSS allows rich control over colour. Any colour can be specified using RGB or Hex (hexidecimal) codes. You can sometimes name the colour itself such as <span class="code">p { color: red; }</span> however there are only 17 valid names allowed in CSS2.</p>
+        
+        <p>An example of HEX colour styling would look like this: <span class="code">p { color: #FF0000; }</span> to produce: <span style="color: #FF0000;">Example red text</span></p>
+        <p>An example of RGB colour styling would look like this: <span class="code">p { color: rgb(0, 0, 255); }</span> to produce: <span style="display: inline; color: rgb(0, 0, 255);">Example blue text</span></p>
+        
+    </div> <!-- top-content -->
+    
+    <div class="b-row pagination">    
+        <div class="col--4"><a class="pag-prev" href="pseudo.html">&laquo; Previous</a></div>
+        <div class="col--4"><a href="#" class="pag-top">Top</a></div>
+        <div class="col--4"><a class="pag-next" href="box-model.html">Next &raquo;</a></div>
+    </div>
+    
+    
+    
+    <p></p>
+    
+    <!--Scripts -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="../index.js"></script>    
+    
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS: Introduction</title>
+    
+    <link rel="stylesheet" type="text/css" href="../breezy.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="html-lessons.css">
+    
+    
+</head>
+<body>
+    
+    
+
+    <div class="nav">
+    <nav>
+        <ul>
+            <li><a href="css.html">&laquo; CSS</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../site-map.html">Site Map</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <div class="top-content padding">
+        <h1>Introduction to CSS</h1>
+        <h3>What is CSS?</h3>
+        
+        <ul>    
+            <li>CSS stands for Cascading Style Sheets.</li>
+            <li>CSS describes how HTML elements should be displayed.</li>
+            <li>It saves a lot of work as one CSS file can be used to style multiple HTML documents.</li>
+        </ul>
+        
+        <p>CSS is used to style web pages, including the design, layout and variations in display for different devices and screen sizes. This means that you can have different style sheet for computers, tablets and mobile devices. You can also have one style sheet that accomodates for each device.</p>
+        
+        <p>When tags like <span class="code">&lt;font&gt;</span>, and <span class="code">color</span> attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+        <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+        
+        
+        <p>You have might have already seen some CSS from the HTML lessons, but to refresh your memory this is its simple form:</p>
+        <img src="test-css.png">
+        
+        <p>You reference CSS using the <span class="code">&lt;link&gt;</span> tag in the <span class="code">&lt;head&gt;</span> section of your HTML document. This will look something like this: <span class="code">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span>, which will add style.css file to the current document. You will have to do this to every HTML document that you wish to style.</p>
+        
+        <p>CSS is used by typing a seclector such as <span class="code">h1</span> to select all <span class="code">&lt;h1&gt;</span> tags, then adding property : value pair. </p>
+        
+        <img src="css-syntax.png">
+        
+        
+    </div> <!-- top-content -->
+    
+    <div class="b-row pagination">    
+        <div class="col--4"><a class="pag-prev" href="css.html">&laquo; Previous</a></div>
+        <div class="col--4"><a href="#" class="pag-top">Top</a></div>
+        <div class="col--4"><a class="pag-next" href="types.html">Next &raquo;</a></div>
+    </div>
+    
+    
+    <!--Scripts -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="../index.js"></script>    
+    
+</body>
+
+</html>

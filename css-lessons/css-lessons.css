@@ -1,0 +1,31 @@
+#box-model1 {
+    background: #ddd;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#box-model2 {
+    background: #ddd;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+#test-btn {
+    transition: 0.3s;
+    padding: 5px;
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+#test-btn:hover {
+    color: #fff;
+    transition: 0.3s;
+    background: #7ca;   
+    border: 2px solid #fff;
+}

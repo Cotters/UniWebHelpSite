@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML: Navigation</title>
+    
+    <link rel="stylesheet" type="text/css" href="../breezy.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="html-lessons.css">
+    
+    <style>
+        ul {
+            list-style: none;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="nav">
+    <nav>
+        <ul>
+            <li><a href="html.html">&laquo; HTML</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../site-map.html">Site Map</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <div class="top-content padding">
+        <h1>Navigation</h1>
+        <h3>What is meant by navigation?</h3>
+        
+        <p>Navigation bars, such as the one at the top of this page, help the user navigate through the site. For example; on this site, and on this page in particular I have added three items on the 'nav bar', which are HTML, Home and Site Map. These three are three important links to help you find you way around the site with ease, saving you the hastle of going back in history or typing the URL out.</p>
+        
+        <p>The key to a good navigation bar is styling, so in this tutorial I will show a little <a href="../css-lessons/css.html">CSS</a>. Also, most navigation bars use <a href="lists.html">lists</a>, which we have already covered. To refresh, here is an example of a list tag: <span class="code">&lt;ul&gt;&lt;/ul&gt;</span>. Click on lists again if you require more information.</p>
+        
+        <h3>Creating a navigation bar</h3>
+        <p>Firstly, lets create an unordered list with <a href="anchors.html">anchor</a> tags in, something like this (feel free to copy and paste):</p>
+        <span class="code">&lt;ul&gt;</span><br/>
+        <span class="code">&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;</span><br/>
+        <span class="code">&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;</span><br/>
+        <span class="code">&lt;li&gt;&lt;a href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;</span><br/>
+        <span class="code">&lt;/ul&gt;</span>
+        
+        <img alt="list" style="display: block; margin-top: 3px; border: 1px solid #000;" src="list.png">
+        
+        <p>As shown above, this creates a list of three items. The <span class="code">&lt;a href="#"&gt;</span> tags turn a simple list into a navigation list, the '#' in the href attribute just links to this page, making the text clickable.</p>
+        <p>Next we want to remove the defualt styling of bullet points and create a single horizontal navigation bar. I will do this using <span class="code">&lt;style&gt;&lt;/style&gt;</span> tags and a little CSS. I will also provide the code and explain each line.</p>
+        
+        <p>Add some <span class="code">&lt;style&gt;&lt;/style&gt;</span> tags to the <span class="code">&lt;head&gt;</span> section of your HTML document, like shown below.</p>
+        
+        <img alt="styling" src="css.png">
+        
+        <p>Finally, copy out the code inside the <span class="code">&lt;style&gt;&lt;/style&gt;</span> tags to format your navigation bar, the end result should look something like this:</p>
+        <img alt="nav-screenshot" style="border: 1px solid #000;" src="nav-bar.png">
+        
+        <h3>Explaination</h3>
+        <p>The <span class="code">&lt;style&gt;&lt;/style&gt;</span> tags allow you to add CSS styling to elements in the document without referencing using link tags. This will be the only time we do this, when you move onto CSS lessons we will be using <span class="code">&lt;link&gt;</span> tags to add styling to one or more documents.</p>
+        
+        <p>The first block of code styles the <span class="code">&lt;ul&gt;</span> tag. This is done by first writing <span class="code">ul {}</span>, to select all <span class="code">&lt;ul&gt;</span> tags, then adding code inside the curly braces to style the selected tag. <span class="code">list-style: none;</span> removes the list styling (bullet points). <span class="code">background: #aaa</span> sets the background colour to 'aaa' HEX. <span class="code">padding: 5px;</span> adds spacing inside the list.</p>
+        
+        <p>The next block of code styles the <span class="code">&lt;li&gt;</span> and <span class="code">&lt;a&gt;</span> tags. These are the actual list (now navigation) items. <span class="code">display: inline;</span> is important - it causes the lists to be displayed in a single line, each item next to the previous one. Since the list is small they should all fit on a single line; though this does depend on your browsers width. The <span class="code">text-decoration: none;</span> removes the underline and colouring from the anchor tag text, so that the links look more like buttons. <span class="code">padding: 5px;</span> was covered in the previous block, but here it just adds to the illusion of making the links (<span class="code">&lt;a&gt;</span>) tags look more like buttons. Finally, the <span class="code">color: blue;</span> sets the text colour of the links to blue to make it stand out from the gray background.</p>
+    </div>
+    
+    
+    
+    
+    <div class="b-row pagination">    
+        <div class="col--4"><a class="pag-prev" href="attributes.html">&laquo; Previous</a></div>
+        <div class="col--4"><a href="#" class="pag-top">Top</a></div>
+        <div class="col--4"><a class="pag-next" href="divs.html">Next &raquo;</a></div>
+    </div>
+    
+    
+    <!--Scripts -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="../index.js"></script>    
+    
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML: Structure</title>
+    
+    <link rel="stylesheet" type="text/css" href="../breezy.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="html-lessons.css">
+    
+</head>
+<body>
+    
+    <div class="nav">
+    <nav>
+        <ul>
+            <li><a href="html.html">&laquo; HTML</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../site-map.html">Site Map</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <div class="top-content padding">
+        <h1>Structural Grouping</h1>
+        <h3>What is meant by structural grouping?</h3>
+    
+        <p>Structural grouping involves the use of <span class="code">&lt;div&gt;</span> tags to divide different sections of your web page. If you go the the home page you might notice the different colours of the top and bottom half of the page. The about section is a seperate part of the page to the top section. This is achieved using <span class="code">&lt;div&gt;</span> tags.</p>
+        
+        <p><span class="code">&lt;div&gt;</span> tags are especially useful for grouping block elements and styling them with CSS. <br/> Most browsers defualt styling for divs look like this: <span class="code">div { display: block; }</span>.</p>
+        
+        <p>Below is an example of how powerful divs can be when coupled with the styling off CSS.</p>
+        <div class="b-row col--2">
+            <img src="div-html.png">
+            <img src="div-css.png">
+        </div>
+        
+        <p>Which will produce something like this...</p>
+        
+        <img id="div-screenshot" src="div-example.png">
+        
+        <p>As you can see, this is built purely with <span class="code">&lt;div&gt;</span> tags and little CSS. Spend some time looking at the HTML and relating it to the result to get a brief idea of how to segment a web page. The next section is on CSS where you can learn how the styling applies to HTML tags.</p>
+        
+    </div>
+    
+    
+    
+    
+    <div class="b-row pagination">    
+        <div class="col--4"><a class="pag-prev" href="navs.html">&laquo; Previous</a></div>
+        <div class="col--4"><a href="#" class="pag-top">Top</a></div>
+        <div class="col--4"><a class="pag-next" href="../css-lessons/css.html">Next &raquo;</a></div>
+    </div>
+    
+    
+    <!--Scripts -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="../index.js"></script>    
+    
+</body>
+
+</html>

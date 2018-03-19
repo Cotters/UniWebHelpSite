@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS: Types</title>
+    
+    <link rel="stylesheet" type="text/css" href="../breezy.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="html-lessons.css">
+    <link rel="stylesheet" type="text/css" href="css-lessons.css">
+    
+    
+</head>
+<body>
+
+    <div class="nav">
+    <nav>
+        <ul>
+            <li><a href="css.html">&laquo; CSS</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../site-map.html">Site Map</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <div class="top-content padding">
+        <h1>Types of styling</h1>
+        <h3>Internal styling</h3>
+        
+        <p>You have seen these before back <a href="file:///Users/macintoshhd/Desktop/Comp%20Sci/1026%20-%20Webstuff/Assignment%202/html-lessons/navs.html">here</a> when we did navs. Internal style sheets are coded in the <span class="code">&lt;head&gt;</span> section of your HTML file, inside <span class="code">&lt;style&gt;&lt;/style&gt;</span> tags. However, whilst this is taught on the module, it is not recomended in practice.</p>
+        
+        <p>This is what internal styling looks like.</p>
+        
+        <img src="../html-lessons/css.png">
+        
+        <p>The downside to internal CSS is that effects are only made to the file it is contained in. So if you're writing a website such as this one, it is really a necessity to use external style sheets.</p>
+        
+        <h3>Inline styling</h3>
+        <p>Inline styling is where the styling of elements is placed within the tags themselves. Think of <a href="../html-lessons/attributes.html">attributes</a>, where the attribute is written inside the tag. An example of inline CSS could be:
+        <span class="code">&lt;p style="background: #fda;"&gt;styled text&lt;/p&gt;</span> which would produce this: </p>
+        <p style="background:#fda;">styled text</p>
+        
+        <p>The problem with inline styling is that it is incredibly tedious and hard to keep track of. For this reason it is certainly reccomended to use the next method (external CSS). This being said, it is useful when you are sure its use is a one-off, that is styling one element in a page that is not necessary to style in an external style sheet, such as a single image or header that differs from the defualt styling of the site.</p>
+        
+        <p>Here is an example of inline CSS used in this very website, on the Home page.</p>
+        <img src="inline-css.png">
+        
+        <h3>External Style Sheets</h3>
+        <p>Referencing an external style sheet is easy and recomended. It takes one like of HTML: <span class="code">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span>.</p>
+        <p>It is important to note that files referenced like this must be in the same folder as your HTML file, if they are in a parent directory use <span class="code">href="../style.css"</span> and if your HTML file is in a folder with a folder of CSS files or images simply reference that folder: <span class="code">href="folder/style.css"</span>.</p>        
+        
+        <p>Here is an example of external style sheets being referenced on the Home page of this site.</p>
+        <img src="external-css.png">
+        
+    </div> <!-- top-content -->
+    
+    <div class="b-row pagination">    
+        <div class="col--4"><a class="pag-prev" href="introduction.html">&laquo; Previous</a></div>
+        <div class="col--4"><a href="#" class="pag-top">Top</a></div>
+        <div class="col--4"><a class="pag-next" href="box-model.html">Next &raquo;</a></div>
+    </div>
+    
+    
+    <!--Scripts -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="../index.js"></script>    
+    
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML: Links & Images</title>
+    
+    <link rel="stylesheet" type="text/css" href="../breezy.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="html-lessons.css">
+    
+</head>
+<body>
+    
+    
+
+    <div class="nav">
+    <nav>
+        <ul>
+            <li><a href="html.html">&laquo; HTML</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../site-map.html">Site Map</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <div class="top-content padding">
+        <h1>Links & Images</h1>
+        
+        <h3 id="sect1">What are link tags?</h3>
+        
+        <p>Link tags are used to add external files to your document. They are mostly used to link style sheets, but can also be used to link JavaScript documents as well; we will come onto this later. Script tags look like <span class="code">&lt;script&gt;&lt;/script&gt;</span> but are useless without attributes.</p>
+        
+        <p>To link a JavaScript file you will have to add something like this <span class="code">&lt;script rel="stylesheet" type="text/css" href="style.css"&gt;&lt;/script&gt;</span> to the bottom of your html code body, just above the closing body tag (shown below).</p>
+        
+        <img src="example-link.png">
+        
+        
+        <p>To link a style sheet, you will have to add something like this <span class="code">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span>. This will add a stylesheet called style.css and the whole link tag should be placed somewhere within the head tag (shown below). Note there is no need for a closing <span class="code">&lt;/link&gt;</span> tag.</p>
+        
+        <img src="example-script.png">
+        
+        <p>You can also link to a fragment of the current document. This is done using the id attribute. For example, <span class="code">&lt;h4 id="sect1"&gt;Section 1&lt;/h4&gt;</span> will produce:</p>
+        
+        <h4 id="sect1">Section 1</h4>
+        
+        <p>Then you want to create a link that will take you to that section, something like this <span class="code">&lt;a href="#sect1"&gt;Go to section 1&lt;/a&gt;</span> will produce:</p>
+        <p><a href="#sect1">Go to section 1</a>, a simple link on the page that when clicked will take you to the referenced location. An example of this is at the bottom of the page. The 'Top' button uses this very method (along with some JavaScript to smooth the transition) to focus the browser back to the top of the page.</p>
+        
+        <h3>What are image tags?</h3>
+        <p><span class="code">&lt;img&gt;</span> tags are used to add images to your document. They use the <span class="code">src</span> attribute, which takes the file name or url of the image as a parameter. I have used this tag to add the two images above this paragraph to this page.</p>
+        
+        <p>The exact code for that is: <p><span class="code">&lt;img src="example-script.png"&gt;</span>, as the image name for the bottom picture was 'example-script.png'.</p>
+        
+    </div>
+    
+    
+    
+    
+    <div class="b-row pagination">    
+        <div class="col--4"><a class="pag-prev" href="lists.html">&laquo; Previous</a></div>
+        <div class="col--4"><a href="#" class="pag-top">Top</a></div>
+        <div class="col--4"><a class="pag-next" href="attributes.html">Next &raquo;</a></div>
+    </div>
+    
+    
+    <!--Scripts -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="../index.js"></script>    
+    
+</body>
+
+</html>

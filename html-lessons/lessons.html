@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML: Introduction</title>
+    
+    <link rel="stylesheet" type="text/css" href="../breezy.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    
+   <script>
+        function load_home() {
+            document.getElementById("content").innerHTML = '<h1>Working!</h1>';
+            document.getElementById("content").innerHTML = '<object type="text/html" data="1.html"></object>';
+            $("#content").load("1.html");
+        }
+        
+        $(document).ready( function() {
+            $("#load_home").on("click", function() {
+                document.getElementById("content").innerHTML = '<object type="text/html" data="1.html"></object>';
+            });
+        });
+        
+    </script>
+    
+</head>
+<body>
+    
+    <div class="nav">
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>    
+            <li><a href="../site-map.html">Site Map</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div id="content"></div>
+    
+    
+    <div id ="content"><a id="load_home" href ="#" onclick="load_home()"> STUFF </a></div>
+    
+    <div class="b-row pagination">    
+        <div class="col--4"><a class="pag-prev" href="#">&laquo; Previous</a></div>
+        <div class="col--4"><a href="#" class="pag-top">Top</a></div>
+        <div class="col--4"><a id="pag-next" class="pag-next" href="#">Next &raquo;</a></div>
+    </div>
+    
+    
+    
+    
+    <!--Scripts -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="../index.js"></script>    
+    
+</body>
+
+</html>

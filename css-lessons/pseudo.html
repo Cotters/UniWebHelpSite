@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS: Pseudo Classes</title>
+    
+    <link rel="stylesheet" type="text/css" href="../breezy.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="html-lessons.css">
+    <link rel="stylesheet" type="text/css" href="css-lessons.css">
+    
+    
+</head>
+<body>
+    
+    
+
+    <div class="nav">
+    <nav>
+        <ul>
+            <li><a href="css.html">&laquo; CSS</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../site-map.html">Site Map</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <div class="top-content padding">
+        <h1>Pseudo Classes</h1>
+        <h3>What are pseudo classes?</h3>
+        
+        <a id="test-btn" href="#">Test Button</a>
+        
+        <p>The above button was built using CSS pseudo classes. If you're interested the code is below.</p>
+        
+        <p>HTML: <span class="code">&lt;a id="test-btn" href="#"&gt;Test Button&lt;/a&gt;</span></p>
+        <p>CSS:</p><img src="pseudo-css.png">
+    
+        <p>The <span class="code">:hover</span> pseduo class styles the <span class="code">&lt;a&g;</span> tag whenever the mouse hovers over that element. It then changes the (font) color, background and border of the element with a transition of 0.3 seconds.</p>
+        
+        <p>Other notable anchor pseudo classes:</p>
+        <div class="code"><p>
+        <p>/* unvisited link */<br/>
+        a:link {
+            color: #FF0000;
+        }</p>
+
+        <p>/* visited link */<br/>
+        a:visited {
+            color: #00FF00;
+        }</p>
+
+        <p>/* mouse over link */<br/>
+        a:hover {
+            color: #FF00FF;
+        }</p>
+
+        <p>/* selected link */<br/>
+        a:active {
+            color: #0000FF;
+        }</p>
+        </div>
+        
+        
+    </div> <!-- top-content -->
+    
+    <div class="b-row pagination">    
+        <div class="col--4"><a class="pag-prev" href="box-model.html">&laquo; Previous</a></div>
+        <div class="col--4"><a href="#" class="pag-top">Top</a></div>
+        <div class="col--4"><a class="pag-next" href="types.html">Next &raquo;</a></div>
+    </div>
+    
+    
+    
+    <p></p>
+    
+    <!--Scripts -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="../index.js"></script>    
+    
+</body>
+
+</html>
